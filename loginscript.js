@@ -9,7 +9,7 @@ const password = document.querySelector('#password')
 
 form.addEventListener('submit',(e)=>{
    
-
+   
     if(!validation()){
     e.preventDefault();
     }
@@ -27,7 +27,7 @@ function validation(){
 
 if(usval === ''){
     s=false;
-    set(username, "Username is reqruied")
+    set(username, "Username is required")
 }
 else{
     sets(username)

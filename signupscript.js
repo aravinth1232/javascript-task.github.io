@@ -4,17 +4,19 @@ const email = document.querySelector('#email')
 const password = document.querySelector('#password')
 const cpassword = document.querySelector('#cpassword')
 
-const form2 = document.getElementById("form2")
 
 
 
 
 
 form.addEventListener('submit',(e)=>{
+
+   
    
 
     if(!validation()){
     e.preventDefault();
+    e.stopImmediatePropagation();
     }
        
     
@@ -30,9 +32,9 @@ function validation(){
 
     
 
-if(usval === ''){
+if(usval === '' || usval===null){
     s=false;
-    set(username, "Username is reqruied")
+    set(username, "Username is required")
 }
 else{
     sets(username)
@@ -47,13 +49,12 @@ if(mailval === ''){
 }else{
     sets(email)
 }
-
-
+ 
 
 if(passwordval === ''){
     s=false;
     set(password,"Password is required")
-}if(passwordval.length< 8){
+}else if(passwordval.length< 8){
     s=false;
     set(password,"Pasword must be atleast 8 characters long")
 }else{
@@ -118,6 +119,16 @@ function sets(element){
 }
 
 
+
+
+
+function validateEmail(email){
+    return String(email)
+      .toLowerCase()
+      .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+  };
 
 
 
