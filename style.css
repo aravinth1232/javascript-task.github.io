@@ -102,15 +102,15 @@ h1:hover{
 .erro{
     /* border: 2px solid grey; */
     /* padding: 1em 1em 1em 0em; */
-    color: rgb(255, 108, 108);
-    font-weight: 700;
-    padding: 0.1em 0em 0.1em 1em;
+    color: rgb(238, 129, 129);
+    font-weight: 500;
+    padding: 0.1em 0em 0em 1em;
     
 }
 
 .succ{
     color: rgb(86, 228, 68);
-    font-weight: 700;
+    font-weight: 600;
     padding: 0.1em 0em 0.1em 1em;
     /* display: none; */
 }
@@ -217,29 +217,6 @@ a:active{
 
 
 @media only screen and (max-width: 425px) and (min-width:10px) {
-
-
-    body{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        
-        background-image: url("https://images.pexels.com/photos/3435249/pexels-photo-3435249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-        /* background-image: url("https://images.pexels.com/photos/1789968/pexels-photo-1789968.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
-        background-attachment: fixed;
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        
-        justify-content: center;
-        align-items: center;   
-        /* padding: 0em 1em; */
-    }
-
-
-
     .all{
         /* border: 2px solid black; */
         background-color: rgb(255, 2555, 255,0.1);
@@ -250,65 +227,29 @@ a:active{
         align-items:stretch;
         /* border-radius: 40px 40px 10px 10px; */
         border-radius: 20px;
-        padding: 0em 0.5em 0em 0em;
-        /* width: 80%; */
-
+        padding: 0em 0em 0em 0em;
        
      
     }
-    
-
-
-
-.my{
-    padding: 0.4rem 0rem 1rem 1rem ;
-    /* border: 2px solid grey; */
-   
 
     
-    /* border: 6px solid black; */
-
-}
-
-.my i{
-    font-size: 1.2em;
-    color: gray;
-}
-
-.my i:hover{
-    color: aliceblue;
-
-}
-
-
-
-.my input{
-    background-color: rgb(255, 2555, 255,0.1);
-    /* backdrop-filter: blur(2px); */
-    /* color: transparent; */
- 
-    color: aliceblue;
-    /* border: 2px solid grey; */
-    background-color: transparent;
-    border-radius: 10px;
-    border: none;
-    font-size: 1.2em;
-    padding: 0em 0em 0em 0.8em;
-    /* margin: 0em 0em 0.5em 0em; */
-    /* margin: 0.5em 0em 0.5em 0em; */
-
-    /* border: 2px solid grey; */
-}
-
-
-
 .erro{
     /* border: 2px solid grey; */
     /* padding: 1em 1em 1em 0em; */
     color: rgb(255, 108, 108);
-    font-weight: 700;
-    padding: 0.5em 0.5em 0.1em 1em;
-    font-size: 12px;   
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0em 0em 0em 1em;
+    
 }
 
+.succ{
+    color: rgb(255, 108, 108);
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0em 0em 0em 1em;
+    /* display: none; */
+}
+
+   
 }

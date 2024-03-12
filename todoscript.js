@@ -19,19 +19,19 @@ button.addEventListener('click',()=>{
 
 function addtodo(todo){
 
-    let p = document.createElement('p');
+    let p = document.createElement('p');  
     p.innerText =todo;
     todolist.appendChild(p)
    
     p.addEventListener('click',()=>{
         p.style.textDecoration="line-through"
+        todolist.removeChild(p)
         remove(todo)
         
     })
 
     p.addEventListener('dblclick',()=>{
-        todolist.removeChild(p)
-        remove(todo)
+     
     })
 
 }

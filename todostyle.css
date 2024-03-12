@@ -1,14 +1,13 @@
 body{
     
-    box-sizing: border-box;
-    width: 100%;
+    box-sizing: border-box !important;
+    width: 99%;
     height: 90vh;  
     display: flex;
     justify-content: center;
     /* align-items: center;   */
-   padding: 5em 0em;
-    background-color: rgb(217, 228, 125);
-    
+    padding: 5em 0em;
+    background-color: rgb(217, 228, 125);  
 }
 
 ::-moz-selection {background: rgba(0,0,0,0);}
@@ -52,10 +51,12 @@ body{
     padding: 1em 1em;
     color: rgb(217, 228, 125);
     overflow-y: scroll;
+    /* overflow: scroll; */
 }
 
 p:hover{
     cursor: pointer;
+    text-decoration: line-through;
 }
 
 h2{
@@ -105,13 +106,17 @@ button:active{
     flex-direction: column;
     align-self: center;
     
-    padding: 0em 0em 0em 0.5em;
+    padding: 0em 0em 0em 1em;
     gap: 2px;
     /* border: 2px solid aliceblue; */
     font-size: 1.5em;
 
-    p{
-        /* border: 2px solid aliceblue; */
-        margin: 0.5em 0em;
-    }
+   
+}
+
+p{
+    /* border: 2px solid aliceblue; */
+    margin: 0.5em 0em;
+    font-size: 1.5em;
+    /* text-align: center; */
 }
