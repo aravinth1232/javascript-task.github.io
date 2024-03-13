@@ -286,7 +286,7 @@ a:active{
     /* padding: 1em 1em 1em 0em; */
     color: rgb(238, 129, 129);
     font-weight: 500;
-    padding: 0.1em 0em 0em 1em;
+    padding: 0.3em 0em 0em 1em;
     color: transparent;
     
 }
@@ -295,7 +295,7 @@ a:active{
     /* border: 2px solid grey; */
     color: rgb(86, 228, 68);
     font-weight: 600;
-    padding: 0.1em 0em 0.1em 1em;
+    padding: 0.3em 0em 0.1em 1em;
     /* display: none; */
 }
 

@@ -116,7 +116,7 @@ function sets(element,message){
     parent.classList.add('succ')
     parent.classList.remove('erro')
    
-   
+   console.log(message);
     
 }
 
